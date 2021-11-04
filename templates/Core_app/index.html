@@ -1,0 +1,226 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content%}
+
+{% include 'includes/alerts.html' %}
+
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{% static 'img/logo/loder.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+
+    <main>
+
+        <!-- slider Area Start-->
+        <div class="slider-area ">
+            <div class="slider-active">
+                <!-- Single Slider -->
+                <div class="single-slider slider-height d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-8">
+                                <div class="hero__caption">
+                                    <span data-animation="fadeInUp" data-delay=".4s">Get Every Single Solutions.</span>
+                                    <h1 data-animation="fadeInUp" data-delay=".6s">We are Sigox Devs here to develope
+                                        your websites.</h1>
+                                    <P data-animation="fadeInUp" data-delay=".8s">We are working as a team with 2
+                                        members. We are here to dedvelop your website's backend using python and django.
+                                        If you are interested, feel free to contact us.</P>
+                                    <!-- Hero-btn -->
+                                    <div class="hero__btn">
+                                        <a href="{% url 'app_core:about' %}" class="btn hero-btn"
+                                            data-animation="fadeInLeft" data-delay=".8s">Learn More</a>
+                                        <a href="{% url 'app_core:contact' %}" class="btn border-btn ml-15"
+                                            data-animation="fadeInRight" data-delay="1.0s">Hire Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider Area End-->
+        <!-- About Area start -->
+        <section class="about-area section-paddingt30">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-5">
+                        <div class="about-caption mb-50">
+                            <h3>Developing With Passion While Exploring The World.</h3>
+                            <p class="pera1"></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="about-caption2">
+                            <h3>Any Type Of Query<br> & Discussion.</h3>
+                            <p>Late talk with us</p>
+                            <div class="send-cv">
+                                <a href="mailto:sigoxdevs@gmail.com" target="_blank"
+                                    rel="noopener noreferrer">sigoxdevs@gmail.com</a>
+                                <i class="ti-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Area End -->
+        <!-- Categories Area Start -->
+        <section class="categories-area section-padding3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle mb-70">
+                            <h2>What Services you will Get from us!</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-pen"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="services.html">Website Design</a></h5>
+                                <p>Html, CSS, Bootstrap, JavaScript, Reactjs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-speaker"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="services.html">Website Development</a></h5>
+                                <p>Python, Django, Postgresql </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-portfolio"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="services.html">API Development</a></h5>
+                                <p>Django Rest Framework</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Categories Area End -->
+
+        <section class="categories-area section-padding3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle mb-70">
+                            <h2>Meet The Team</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <img src="{% static 'img/about/girish.jpg' %}" style="border-radius:50%;"
+                                    alt="Girish's Picture" srcset="" class="img-fluid">
+                            </div>
+                            <div class="cat-cap mt-5">
+                                <h5><a href="services.html">Girish Mondal</a></h5>
+                                <p>Web Developer</p>
+                                <p>Currently Studying Computer Science and Engineering at</p>
+                                <p>Bangabandhu Sheikh Mujibur Rahman Science and Technology University</p>
+
+                                <!-- Footer Social -->
+                                <div class="footer-social f-right mt-3">
+                                    <a>Stay Connected..</a>
+                                    <a href="https://www.facebook.com/girishhmo/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/in/girishhmo/"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.instagram.com/girisshmo/"><i class="fab fa-instagram"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 ">
+                        <div class="single-cat text-center">
+                            <div class="cat-icon">
+                                <img src="{% static 'img/about/sifat.jpg' %}" style="border-radius:50%;"
+                                    alt="sifat's Picture" srcset="" class="img-fluid">
+                            </div>
+                            <div class="cat-cap mt-5">
+                                <h5><a href="services.html">Sifat Ahamed</a></h5>
+                                <p>Web Developer and Designer</p>
+                                <p>Currently Studying Computer Science and Engineering at</p>
+                                <p>Bangabandhu Sheikh Mujibur Rahman Science and Technology University</p>
+                                <div class="footer-social f-right mt-3">
+                                    <a>Stay Connected..</a>
+                                    <a href="https://www.facebook.com/profile.php?id=100008872269831"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a
+                                        href="https://www.linkedin.com/in/sifat-ahmed-1283701ab/?fbclid=IwAR33O4Fq-V8pnXjHwf9qvSkQ7pbboDDMTSEmeCUAKhpJULXSlOX9GNG1du8"><i
+                                            class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.instagram.com/t_a_sifat/"><i class="fab fa-instagram"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+        </section>
+
+
+
+        <!-- Contact Info Start -->
+        <section class="contact-info-area w-padding2" data-background="{% static 'img/gallery/section_bg04.jpg' %}">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-5 col-lg-7">
+                        <div class="contact-caption mb-50">
+                            <h3>If yor are interested then , Let’s Work Together!</h3>
+                            <p>Send your message here. We will get back to you!</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5">
+
+                        <div class="col-12">
+                            <div class="form-group mt-3">
+                                <a href="{% url 'app_core:contact' %}"
+                                    class="button button-contactForm boxed-btn">Connect with
+                                    Us</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Info End -->
+
+    </main>
+
+
+
+</body>
+{% endblock%}
